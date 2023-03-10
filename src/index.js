@@ -10,8 +10,8 @@ import MyComponent from './components/state';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Counter /> */}
-    <MyComponent />
+    <Counter />
+    {/* <MyComponent /> */}
   </React.StrictMode>
 );
 
