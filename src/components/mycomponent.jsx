@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-export default function MyComponet () {
+export default function MyComponent () {
     let first_text = "Hello World!";
     let second_text = "Hi there!";
     const [state, setState] = useState({greetings: first_text});
@@ -18,6 +19,8 @@ export default function MyComponet () {
                 <h1>{state.greetings}</h1>
                 <button onClick={handleClick}>Change State</button>
             </div>
+
+            <Link to='/'>Home</Link>
         </div>
     );
 }
