@@ -17,10 +17,11 @@ export default function MyComponent () {
         <div className='container'>
             <div className='pt-5 pd-5'>
                 <h1>{state.greetings}</h1>
-                <button onClick={handleClick}>Change State</button>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quod tenetur doloribus? Ab tenetur enim iste illo. Est voluptas repellendus sed quidem architecto adipisci quo? Repudiandae praesentium consectetur rerum animi.</p>
+                <button className={'btn btn-primary'} onClick={handleClick}>Change State</button>
             </div>
 
-            <Link to='/'>Home</Link>
+            <Link to='/'><button className="btn btn-secondary mt-3">Home</button></Link>
         </div>
     );
 }

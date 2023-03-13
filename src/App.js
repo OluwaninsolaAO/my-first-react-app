@@ -6,10 +6,12 @@ import MyComponent from './components/mycomponent';
 class App extends Component {
   render() { 
     return (
+      <div className='container'>
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/MyComponent' element={<MyComponent />}/>
       </Routes>
+      </div>
     );
   }
 }

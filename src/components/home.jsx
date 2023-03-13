@@ -39,15 +39,15 @@ class Home extends Component {
     return (
       <>
         <NavBar totalCounters={ this.state.counters.filter(c => c.value > 0).length }/>
-        <main className='container'>
+        <div>
           <Counters 
           onReset={this.handleReset}
           onIncrement={this.handleIncrement}
           onDelete={this.handleDelete}
           counters={this.state.counters}
           />
-        </main>
-        <Link to='/MyComponent'>MyComponent</Link>
+        </div>
+        <Link to='/MyComponent'><button className="btn btn-secondary mt-3">My Component</button></Link>
       </>
     );
   }
